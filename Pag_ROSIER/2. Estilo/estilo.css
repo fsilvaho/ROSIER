@@ -1,0 +1,141 @@
+/* HEADER - Más compacto y refinado */
+header{
+    height: 70px; /* Reducido de 90px */
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.03); /* Sombra más sutil */
+}
+
+.logo-mini img{
+    width: 65px; /* Reducido de 80px */
+}
+
+nav{
+    display: flex;
+    gap: 35px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #5a4743;
+    font-size: 14px; /* Reducido de 18px */
+    font-weight: 400; /* Más ligero */
+    letter-spacing: 1.5px; /* Espaciado elegante */
+    text-transform: uppercase; /* Mayúsculas para elegancia */
+    transition: .3s;
+}
+
+nav a:hover{
+    color: #d4aa84;
+}
+
+/* HERO */
+.hero{
+    min-height: 70vh; /* Reducido de 80vh */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* LOGO PRINCIPAL - Más pequeño */
+.logo-principal{
+    width: 250px; /* Reducido de 350px */
+    max-width: 70%;
+    margin-bottom: 30px; /* Más espacio */
+}
+
+/* TITULO - Más refinado */
+.hero h1{
+    font-size: 42px; /* Reducido de 60px */
+    color: #5a4743;
+    margin-bottom: 25px;
+    font-weight: 300; /* Más ligero = más elegante */
+    letter-spacing: 1px; /* Espaciado sofisticado */
+}
+
+/* DESCRIPCION */
+.descripcion{
+    max-width: 700px; /* Más estrecho = más elegante */
+    font-size: 20px; /* Reducido de 22px */
+    line-height: 1.25; /* Más aire entre líneas */
+    color: #6b6b6b; /* Gris más suave */
+    margin-bottom: 20px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.descripcion-secundaria{
+    font-size: 18px; /* Reducido de 18px */
+    color: #888; /* Más sutil */
+    margin-bottom: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* BOTON - Más delicado */
+.btn-coleccion{
+    margin-top: 35px; /* Más espacio */
+    text-decoration: none;
+    background: #d6b596;
+    color: white;
+    padding: 14px 35px; /* Reducido de 18px 45px */
+    border-radius: 30px; /* Menos redondeado */
+    font-size: 13px; /* Reducido de 18px */
+    font-weight: 400;
+    letter-spacing: 2px; /* Espaciado elegante */
+    text-transform: uppercase;
+    transition: .3s;
+    border: 1px solid transparent;
+}
+
+.btn-coleccion:hover{
+    background: transparent;
+    color: #5a4743;
+    border-color: #d6b596;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    header{
+        padding: 0 20px;
+        height: 60px;
+    }
+
+    nav{
+        gap: 20px;
+    }
+
+    nav a{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .logo-principal{
+        width: 200px;
+    }
+
+    .hero h1{
+        font-size: 32px;
+        letter-spacing: 1.5px;
+    }
+
+    .descripcion{
+        font-size: 14px;
+    }
+
+    .descripcion-secundaria{
+        font-size: 12px;
+    }
+
+    .btn-coleccion{
+        padding: 12px 28px;
+        font-size: 11px;
+    }
+}
